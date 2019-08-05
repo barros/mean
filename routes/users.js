@@ -1,19 +1,22 @@
 const express = require('express');
 const router = express.Router()
 
-// register user
+// Register
 router.get('/register', (req, res, next) => {
   res.send('REGISTER')
 });
 
-router.get('/authenticate', (req, res, next) => {
+// Authenticate
+router.post('/authenticate', (req, res, next) => {
   res.send('AUTHENTICATE')
 });
 
+// Profile
 router.get('/profile', (req, res, next) => {
   res.send('PROFILE')
 });
 
+// Validate
 router.get('/validate', (req, res, next) => {
   res.send('VALIDATE')
 });
